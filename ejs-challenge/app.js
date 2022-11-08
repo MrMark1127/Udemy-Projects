@@ -8,7 +8,7 @@ const { forEach, isInteger, find } = require("lodash");
 const mongoose = require("mongoose")
 const port = process.env.PORT || 3001;
 
-mongoose.connect("mongodb+srv://Mark1127:<password>@cluster0.pwkzxza.mongodb.net/blogDB")
+mongoose.connect("mongodb://127.0.0.1:27017/blogDB")
 
 const homeStartingContent = "Hello, this is my 'blog' style website where there is a hidden route that will allow the user to compose messages, all the while saving those messages into the database setup with MongoDB. When the page is rendered, the information is requested from the database and posted to the proper route using EJS. Due to database limitations, I am unable to grant access to the composition page, but if you'd like to test the functionality of the website please feel free to shoot me an email at mark11273@gmail.com.";
 const aboutContent = "Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Non diam phasellus vestibulum lorem sed. Platea dictumst quisque sagittis purus sit. Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Mauris in aliquam sem fringilla. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Amet massa vitae tortor condimentum lacinia quis vel eros. Enim ut tellus elementum sagittis vitae. Mauris ultrices eros in cursus turpis massa tincidunt dui.";
